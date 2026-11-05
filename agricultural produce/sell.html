@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sell Produce | AgroMarket</title><link rel="stylesheet" href="assets/style.css"><script src="assets/script.js" defer></script></head>
+<body>
+<header class="header"><a class="logo" href="index.html">Agro<span>Market</span></a><nav><a href="index.html">Home</a><a href="browse.html">Browse Produce</a><a class="active" href="sell.html">Sell Produce</a>
+</nav><a class="nav-btn" href="sell.html">Start Selling</a></header>
+<section class="page-banner"><h1>Sell Your Produce</h1><p>Share your farm products with potential buyers.</p></section>
+<main class="section form-section"><form id="sellForm" class="sell-form">
+  <h2>Product Information</h2><p class="form-intro">Fill in the details below to list your product.</p>
+  <label>Product name<input name="name" required placeholder="e.g. Fresh Tomatoes"></label>
+  <div class="form-row"><label>Category<select name="category" required><option value="">Choose category</option><option>Grains</option><option>Vegetables</option><option>Fruits</option><option>Tubers</option><option>Other</option></select></label>
+  <label>Price (₦)<input name="price" type="number" min="1" required placeholder="e.g. 15000"></label></div>
+  <div class="form-row"><label>Quantity<input name="quantity" required placeholder="e.g. 20 bags"></label><label>Location<input name="location" required placeholder="e.g. Lokoja, Kogi"></label></div>
+  <label>WhatsApp number<input name="phone" required placeholder="e.g. 2348012345678"></label>
+  <label>Product description<textarea name="description" rows="3" placeholder="Describe your product"></textarea></label>
+  <label>Product picture<input id="productImage" name="image" type="file" accept="image/*" required></label>
+  <img id="imagePreview" class="image-preview" alt="Selected product preview" hidden>
+  <button class="btn submit-btn" type="submit">Publish Product</button><p id="formMessage" class="form-message" aria-live="polite"></p>
+</form></main>
+<footer><h2>AgroMarket</h2><p>Connecting farmers with buyers through technology.</p><p class="copyright">© 2026 AgroMarket. All rights reserved.</p></footer>
+</body></html>
